@@ -21,6 +21,7 @@ import {
   LMS,
   chat,
   socialMedia,
+  Npm
 } from "../assets/icons";
 
 export const skills = [
@@ -177,5 +178,13 @@ export const projects = [
     description:
       "Random Chat Application is a real-time anonymous chat platform built with the MERN stack and Socket.io. It allows users to connect, chat, and skip to new conversations instantly, with real-time messaging and typing indicators.",
     link: "https://web-chat-94zg.onrender.com/",
+  },
+  {
+    iconUrl: Npm,
+    theme: "btn-back-red",
+    name: "Mail Sender npm pkg",
+    description:
+      "Mail Sender is a simple Node.js utility built with Nodemailer to send emails effortlessly. Ideal for password resets, verifications, and notifications with support for dynamic templates.",
+    link: "https://www.npmjs.com/package/@kunal_kumar/mail-sender-sdk",
   },
 ];

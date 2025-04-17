@@ -5,12 +5,7 @@ import { arrow } from "../assets/icons";
 const Blog = () => {
   const [blogs, setBlogs] = useState([]);
 
-  const subdomains = [
-    "sandeepatel010101.hashnode.dev",
-    "sandeepatel010.hashnode.dev",
-    "sandeepatel01.hashnode.dev",
-    "sandeepatel0.hashnode.dev",
-  ];
+  const subdomains = ["kunal-kumar.hashnode.dev"];
 
   const fetchBlogsFromAll = async () => {
     const query = `
@@ -67,47 +62,53 @@ const Blog = () => {
       </h1>
       <div className="mt-5 flex flex-col gap-3 text-slate-500">
         <p>
-          I've embarked on numerous projects throughout the years, but these are
-          the ones I hold closest to my heart. Many of them are open-source, so
-          if you come across something that piques your interest, feel free to
-          explore the codebase and contribute your ideas for further
-          enhancements. Your collaboration is highly valued!
+          Welcome to my blog — a space where I share what I learn as a
+          developer. From solving real-world problems to exploring new tech and
+          building cool projects, this blog is all about documenting my journey
+          and giving back to the dev community. Whether it's coding tips,
+          debugging stories, or just thoughts on tech, you’ll find it all here!
         </p>
       </div>
 
-      <div className="grid grid-cols-1 sm:grid-cols-2 my-20 gap-16 ">
-        {blogs.map((blog, index) => (
-          <div key={index} className="pb-20">
-            <div className="w-full h-[100%] m-auto">
-              {blog.node.coverImage?.url && (
+      {blogs.length > 0 ? (
+        <div className="grid grid-cols-1 sm:grid-cols-2 my-20 gap-16 ">
+          {blogs.map((blog, index) => (
+            <div key={index} className="pb-20">
+              <div className="w-full h-[100%] m-auto">
+                {blog.node.coverImage?.url && (
+                  <img
+                    src={blog.node.coverImage.url}
+                    alt={blog.node.title}
+                    className="h-[90%] flex justify-center"
+                  />
+                )}
+              </div>
+              <h3 className="text-lg font-semibold font-black-500">
+                {blog.node.title}
+              </h3>
+              <div className="mt-5 flex items-center gap-2 font-poppins">
+                <Link
+                  to={blog.node.url}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="font-semibold text-blue-600"
+                >
+                  Learn more
+                </Link>
                 <img
-                  src={blog.node.coverImage.url}
-                  alt={blog.node.title}
-                  className="h-[90%] flex justify-center"
+                  src={arrow}
+                  alt="arrow"
+                  className="w-4 h-4 object-contain"
                 />
-              )}
+              </div>
             </div>
-            <h3 className="text-lg font-semibold font-black-500">
-              {blog.node.title}
-            </h3>
-            <div className="mt-5 flex items-center gap-2 font-poppins">
-              <Link
-                to={blog.node.url}
-                target="_blank"
-                rel="noopener noreferrer"
-                className="font-semibold text-blue-600"
-              >
-                Learn more
-              </Link>
-              <img
-                src={arrow}
-                alt="arrow"
-                className="w-4 h-4 object-contain"
-              />
-            </div>
-          </div>
-        ))}
-      </div>
+          ))}
+        </div>
+      ) : (
+        <div className="flex justify-center items-center mt-8">
+          <p className="font-semibold text-3xl">Blog not found...</p>
+        </div>
+      )}
     </section>
   );
 };
