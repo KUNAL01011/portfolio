@@ -188,3 +188,12 @@ export const projects = [
     link: "https://www.npmjs.com/package/@kunal_kumar/mail-sender-sdk",
   },
 ];
+
+export const blogs = [
+  {
+    name: "What is WSL ?",
+    description:
+      "WSL is like a magical box that appears only when you need it, and disappears when you’re done.Imagine you’re using Windows but suddenly need a Linux system for a specific task — maybe you want to run Judge0, which only works in a Linux environment",
+    link: "https://medium.com/@kunal34255/what-is-wsl-ae410d3106f1",
+  },
+]
