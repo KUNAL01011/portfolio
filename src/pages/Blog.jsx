@@ -27,10 +27,10 @@ const Blog = () => {
         {blogs.map((blog) => (
           <div className="lg:w-[400px] w-full" key={blog.name}>
             <div className="mt-5 flex flex-col">
-              <h4 className="text-2xl font-poppins font-semibold">
+              <h4 className="text-2xl font-poppins font-semibold line-clamp-1">
                 {blog.name}
               </h4>
-              <p className="mt-2 text-slate-500">{blog.description}</p>
+              <p className="mt-2 text-slate-500 line-clamp-6">{blog.description}</p>
               <div className="mt-5 flex items-center gap-2 font-poppins">
                 <Link
                   to={blog.link}

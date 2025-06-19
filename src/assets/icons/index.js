@@ -23,7 +23,9 @@ import arrow from "./arrow.svg";
 import contact from "./contact.svg";
 import soundon from "./soundon.png";
 import soundoff from "./soundoff.png";
+import AlgoArena from "./algoarena.png";
 import Npm from "./NPM.png"
+import mail from "./gmail.png";
 export {
   css,
   express,
@@ -50,5 +52,7 @@ export {
   chat,
   LMS,
   socialMedia,
-  Npm
+  Npm,
+  AlgoArena,
+  mail
 };
