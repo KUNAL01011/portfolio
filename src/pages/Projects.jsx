@@ -64,7 +64,7 @@ const Projects = () => {
                   onMouseEnter={handleMouseEnter}
                   disabled={!project.videoUrl}
                 >
-                  Watch deme
+                  Watch demo
                 </button>
                 <div className="flex items-center gap-2">
                   <Link
