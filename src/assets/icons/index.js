@@ -25,7 +25,8 @@ import soundon from "./soundon.png";
 import soundoff from "./soundoff.png";
 import AlgoArena from "./algoarena.png";
 import Npm from "./NPM.png"
-import mail from "./gmail.png";
+import mail from "./mail.svg";
+import instagram from './instagram.svg'
 export {
   css,
   express,
@@ -54,5 +55,6 @@ export {
   socialMedia,
   Npm,
   AlgoArena,
-  mail
+  mail,
+  instagram
 };

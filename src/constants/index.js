@@ -1,4 +1,4 @@
-import { paraseek, techwithjoshi } from "../assets/images";
+import { freelance, paraseek, techwithjoshi } from "../assets/images";
 import {
   css,
   express,
@@ -23,7 +23,7 @@ import {
   Npm,
   AlgoArena,
   twitter,
-  mail
+  instagram
 } from "../assets/icons";
 
 export const skills = [
@@ -125,15 +125,15 @@ export const experiences = [
   },
   {
     title: "Freelance",
-    company_name: "ParaSeek",
-    icon: paraseek,
+    company_name: "Web Application",
+    icon: freelance,
     iconBg: "#fff200",
-    date: "Oct 2024 - Jan 2025",
+    date: "Dec 2024 - Jan 2025",
     points: [
-      "Designing and developing the backend architecture of ParaSeek, a comprehensive employment portal, using Node.js, Express.js, and MongoDB.",
-      "Collaborating with frontend developers to integrate RESTful APIs and ensure smooth data flow across the platform.",
-      "Implementing features such as job posting, applications, user authentication, and notification systems.",
-      "Participating in code reviews and debugging, maintaining clean and efficient backend code.",
+      "Built both frontend and backend for a full-stack web application using React.js, Node.js, Express.js, and MongoDB.",
+      "Collaborated on UI/UX design and integrated RESTful APIs to deliver seamless user experiences across devices.",
+      "Developed core modules like job posting, user onboarding, authentication, and notification features.",
+      "Ensured clean, modular code through debugging, code reviews, and consistent development practices.",
     ],
   },
 ];
@@ -145,9 +145,9 @@ export const socialLinks = [
     link: "https://x.com/Kunal_098",
   },
   {
-    name: "Mail",
-    iconUrl: mail,
-    link: "/contact",
+    name: "instagram",
+    iconUrl: instagram,
+    link: "https://www.instagram.com/kunal011010/",
   },
   {
     name: "GitHub",
@@ -172,7 +172,7 @@ export const projects = [
     videoUrl: {
       url: "https://jqj85xu4kj.ufs.sh/f/ebjSeZwBViRsWQvQw5U9fzQu06PF54EMAcsthVNerLyjSGaD",
       title: "Algo Arena Platform Demo",
-    }
+    },
   },
   {
     iconUrl: LMS,
@@ -184,7 +184,7 @@ export const projects = [
     videoUrl: {
       url: "https://jqj85xu4kj.ufs.sh/f/ebjSeZwBViRszqSXpXdUmsY3HDtl5TiCoWrbwVXvByq2Pgf7",
       title: "Web Learning Platform Demo",
-    }
+    },
   },
   {
     iconUrl: socialMedia,
@@ -196,7 +196,7 @@ export const projects = [
     videoUrl: {
       url: "https://jqj85xu4kj.ufs.sh/f/ebjSeZwBViRsMECieAN1L7kc0EQ6S93V5IoYWDZ4hNCPqGni",
       title: "Web Media Platform Demo",
-    }
+    },
   },
   {
     iconUrl: chat,
@@ -208,7 +208,7 @@ export const projects = [
     videoUrl: {
       url: "https://jqj85xu4kj.ufs.sh/f/ebjSeZwBViRsl3dXsnZza20wh4rynRvVOgGDEu15TdjQMoUx",
       title: "Random Chat Platform Demo",
-    }
+    },
   },
   {
     iconUrl: Npm,
@@ -217,7 +217,16 @@ export const projects = [
     description:
       "Mail Sender is a simple Node.js utility built with Nodemailer to send emails effortlessly. Ideal for password resets, verifications, and notifications with support for dynamic templates.",
     link: "https://www.npmjs.com/package/@kunal_kumar/mail-sender-sdk",
-    videoUrl: null
+    videoUrl: null,
+  },
+  {
+    iconUrl: paraseek, // You can add a relevant icon if available
+    theme: "btn-back-yellow",
+    name: "ParaSeek",
+    description:
+      "ParaSeek is a job and skill discovery platform built to simplify career planning through personalized training paths. It offers features like job listings, skill gap analysis, resume builder, and community support to assist users in preparing for the modern job market.",
+    link: "https://paraseek.devxmanan.com/",
+    videoUrl: null,
   },
 ];
 
@@ -240,4 +249,4 @@ export const blogs = [
       "Polyfills are like magic spells that make old browsers understand new JavaScript features. They allow developers to use the latest features without worrying about compatibility issues, ensuring a consistent experience across different browsers.",
     link: "https://medium.com/@kunal34255/write-once-run-everywhere-a-guide-to-polyfills-in-javascript-93b80c679bf9",
   },
-]
+];

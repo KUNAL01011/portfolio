@@ -1,4 +1,5 @@
 import paraseek from "./paraseek.png";
 import techwithjoshi from "./techwithjoshi.jpg";
+import freelance from './freelance.png'
 
-export { paraseek, techwithjoshi };
+export { freelance, techwithjoshi,paraseek };
